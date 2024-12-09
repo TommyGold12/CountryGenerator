@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <title>Country generator</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Welcome to<br />country generator</h1>
+        <h2>Everything what you want to know in one click!</h2>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="dropMenu_1" id="drop_menu">
+          <input
+            class="country_1"
+            onkeyup="searchCountry(this)"
+            placeholder="Choose country 1"
+          />
+          <div class="select_1"></div>
+        </div>
+        <button onclick="compareCountry(this)" id="btnCompare">Reset</button>
+        <div class="dropMenu_2" id="drop_menu">
+          <input
+            class="country_2"
+            onkeyup="searchCountry(this)"
+            placeholder="Choose country 2"
+          />
+          <div class="select_1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="heroCountry">
+      <div class="container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
