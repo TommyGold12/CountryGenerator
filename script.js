@@ -88,23 +88,29 @@ const countryCard = function (countryData) {
                               <div class="cardBio">
                                 <h2>${countryData.name.common}</h2>
                                 <h4>${countryData.region}</h4>
+                                <div class="flexBio">
+                                <div>
                                 <p><span>🏢</span>${countryData.capital[0]}</p>
                                 <p><span>🧑🏻‍🤝‍🧑🏽</span>${(
                                   countryData.population / 1000000
                                 ).toFixed(2)}M</p>
-                                <p><span>🌎</span>${countryData.area.toLocaleString(
-                                  "en-US"
-                                )} km2</p>
-                                  <p><span>🗣️</span>${
-                                    Object.values(countryData.languages)[0]
-                                  }</p>
-                                  <p><span>💰</span>${
-                                    Object.values(countryData.currencies)[0]
-                                      .name
-                                  }</p>
-                                  <p><span>⌛</span>${
-                                    countryData.timezones[0]
-                                  }</p>
+                                  <p><span>🌎</span>${countryData.area.toLocaleString(
+                                    "en-US"
+                                  )} km2</p>
+                                    </div>
+                                    <div>
+                                    <p><span>🗣️</span>${
+                                      Object.values(countryData.languages)[0]
+                                    }</p>
+                                      <p><span>💰</span>${
+                                        Object.values(countryData.currencies)[0]
+                                          .name
+                                      }</p>
+                                        <p><span>⌛</span>${
+                                          countryData.timezones[0]
+                                        }</p>
+                                        </div>
+                                        </div>
                               </div>
                             </div>`;
 };
