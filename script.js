@@ -5,7 +5,7 @@ const select_2 = document.querySelector(".select_2");
 const country_1 = document.querySelector(".country_1");
 const country_2 = document.querySelector(".country_2");
 const heroCountry = document.querySelector(".heroCountry .container");
-
+/*
 let count = 10;
 const startCounter = function () {
   const interval = setInterval(() => {
@@ -17,7 +17,7 @@ const startCounter = function () {
   }, 15);
 };
 startCounter();
-
+*/
 //* Asinkrono dohvaćanje podataka
 const getCountryData = async function (name, el) {
   console.log(el);
